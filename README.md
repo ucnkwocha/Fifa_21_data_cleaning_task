@@ -17,10 +17,11 @@ The objective of the data cleaning is to eliminate the listed below
 * Handling Inconsistent Formats
 
 # Description of dataset
-This data set was sourced from [kaggle]([https://pages.github.com/](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring)https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring)
+This data set was sourced from [kaggle](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring)
 
 The dataset contains 18,979 rows and 77 columns which includes details of the player's names, clubs,photo_url, height, weight, their overall perfomance and so on. 
 
 Walk with me as i take you through the data cleaning process 
 
 # Data Cleaning Process
+
