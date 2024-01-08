@@ -27,7 +27,7 @@ Walk with me as i take you through the data cleaning process
 # Data Cleaning Process
 The dataset was successfully imported from the excel workbook ribbon on Power BI which allows files to be access directly from the desktop.
 
-#<img width="617" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/8e8cc35c-545b-4c1b-8852-0166e73d1d6c">
+<img width="617" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/8e8cc35c-545b-4c1b-8852-0166e73d1d6c">
 
 Below is the FIFA 21 dataset in the power query editor showing the quality of each columns, however this captured the first four columns. The first four columns displays  100% valid, 0% error and 0% empty cell.
 
