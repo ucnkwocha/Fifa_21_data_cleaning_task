@@ -55,6 +55,26 @@ The Club column consists of inconsistent data entry. Some of the club’s names 
 <img width="559" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bf14e0da-5ce3-479f-8783-1f3a7f3f107d">
 <img width="257" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/984f0054-4ebb-431e-8cd5-1a5021abaac0">
 
+# Contract and Position Column
+The contract column indicates the players duration. It contains inconsistent values which comprises of players on contract, free and on Loan.
+
+<img width="375" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6534d980-c130-46d8-a726-6eb3d8ce2af5">
+
+I have used the replace value option to change the " ~ " character to "-"
+
+<img width="265" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b9919cb9-f1d7-425c-bc19-b041a6291e0b">
+
+I also used conditional formatting to seperate each category of contract.
+Using conditional column, Values are grouped into contract, Loan and free values. Column name is renamed to contract type. A condition is entered such that, IF contract column contains (-) return CONTRACT, Else if contract contains free return free Else return Loan. Enter ok
+
+<img width="674" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/cc16d5f1-b168-464f-9511-7ae74a1b90d4">
+<img width="252" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b4e45cf5-ceb5-4bb2-86d1-9f9c8344f4f3">
+
+
+
+
+
+
 
 
 
