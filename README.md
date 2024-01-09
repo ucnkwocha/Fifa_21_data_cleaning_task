@@ -61,8 +61,7 @@ The contract column indicates the players duration. It contains inconsistent val
 <img width="375" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6534d980-c130-46d8-a726-6eb3d8ce2af5">
 
 I have used the replace value option to change the " ~ " character to "-"
-
-<img width="265" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b9919cb9-f1d7-425c-bc19-b041a6291e0b">
+![image](https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/0d5be09c-f9d5-4a57-aece-6764b7977571)
 
 I also used conditional formatting to seperate each category of contract.
 Using conditional column, Values are grouped into contract, Loan and free values. Column name is renamed to contract type. A condition is entered such that, IF contract column contains (-) return CONTRACT, Else if contract contains free return free Else return Loan. Enter ok
