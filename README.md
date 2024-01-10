@@ -69,8 +69,20 @@ Using conditional column, Values are grouped into contract, Loan and free values
 <img width="674" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/cc16d5f1-b168-464f-9511-7ae74a1b90d4">
 <img width="252" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b4e45cf5-ceb5-4bb2-86d1-9f9c8344f4f3">
 
+To derive the contract duration,
+I right clicked on the contract column and used split column option by delimiter to split the start year and end year.
+
+<img width="241" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc92c154-e5b6-49de-825b-a9987aa0f78c">
 
 
+
+
+# Position 
+The ‘Position’ column consists of one or more positions the player has ever played. The values are consistent with no empty cell or error cell.
+
+<img width="125" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4cb234bc-eff4-42df-9f7b-311cac380726">
+
+# Height and Weight
 
 
 
