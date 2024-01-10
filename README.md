@@ -53,7 +53,8 @@ The Abbreviated OVA column with a special character and the POT column has been 
 The Club column consists of inconsistent data entry. Some of the club’s names had numerical prefixes like 1.FC Koln. The prefix was removed from the data using the replace values option.
 
 <img width="559" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bf14e0da-5ce3-479f-8783-1f3a7f3f107d">
-<img width="257" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/984f0054-4ebb-431e-8cd5-1a5021abaac0">
+<img width="252" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/f7105aa2-5096-49b9-84e8-d874f95920f7">
+
 
 # Contract and Position Column
 The contract column indicates the players duration. It contains inconsistent values which comprises of players on contract, free and on Loan.
