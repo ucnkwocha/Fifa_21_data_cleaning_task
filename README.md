@@ -75,15 +75,26 @@ I right clicked on the contract column and used split column option by delimiter
 
 <img width="241" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc92c154-e5b6-49de-825b-a9987aa0f78c">
 
+After splitting, I observed that the split columns contained 5% error. I used the replace error option to replace error with null.
+Furthermore, the custom column was used to derive the player's contract duration on the split columns.
 
+<img width="506" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f0a4b01-b918-495c-ba4c-a70f2cd99378">
 
+# Position and Best Position
+The ‘Position’ column consists of one or more positions the player has ever played while the "Best postion"column indicates the best position for the player. 
+For data visualization purpose it is best to retain the Best Position column in place of the Position column.
+For both columns, the values are consistent with no empty cell or error cell. 
 
-# Position 
-The ‘Position’ column consists of one or more positions the player has ever played. The values are consistent with no empty cell or error cell.
+<img width="242" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a655ca9a-94d9-4c94-aad7-c8be89b12528">
+The Replace value option was used to replace the abbreviated values
 
-<img width="125" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4cb234bc-eff4-42df-9f7b-311cac380726">
+<img width="504" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc958a9c-917c-4b82-9d85-63d7599efde6">
+<img width="133" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a0bbcf5a-98b6-47ab-a755-5ea8a4fdbad8">
 
 # Height and Weight
+The both columns contains inconsistent data. The height value was entered in two different formats (foot & inches), while the weight column had values entered in two different formats "kg" and "lbs".
+
+<img width="244" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/2f26ff9b-1fa1-4af5-a297-4403a9be2bf6">
 
 
 
