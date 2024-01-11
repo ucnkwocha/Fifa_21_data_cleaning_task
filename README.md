@@ -62,12 +62,14 @@ The contract column indicates the players duration. It contains inconsistent val
 <img width="375" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6534d980-c130-46d8-a726-6eb3d8ce2af5">
 
 I have used the replace value option to change the " ~ " character to "-"
+
 ![image](https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/0d5be09c-f9d5-4a57-aece-6764b7977571)
 
 I also used conditional formatting to seperate each category of contract.
 Using conditional column, Values are grouped into contract, Loan and free values. Column name is renamed to contract type. A condition is entered such that, IF contract column contains (-) return CONTRACT, Else if contract contains free return free Else return Loan. Enter ok
 
 <img width="674" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/cc16d5f1-b168-464f-9511-7ae74a1b90d4">
+
 <img width="252" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b4e45cf5-ceb5-4bb2-86d1-9f9c8344f4f3">
 
 To derive the contract duration,
@@ -90,9 +92,11 @@ For data visualization purpose it is best to retain the Best Position column in 
 For both columns, the values are consistent with no empty cell or error cell. 
 
 <img width="242" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a655ca9a-94d9-4c94-aad7-c8be89b12528">
+
 The Replace value option was used to replace the abbreviated values
 
 <img width="504" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc958a9c-917c-4b82-9d85-63d7599efde6">
+
 <img width="133" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a0bbcf5a-98b6-47ab-a755-5ea8a4fdbad8">
 
 # Height and Weight
@@ -127,7 +131,9 @@ New_weight = Table.AddColumn(#"PreviousStep", "New_weight", each
 <img width="154" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6b408cbf-dfc9-47ca-affc-0872f80b4eff">
 
 # Value, wage and release clause
+
 <img width="362" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/14b13f10-a23e-48b6-9f25-0078e1e8cee0">
+
 The value and wage columns are in string /text data type and needs to be converted to Number. The € was replaced with space(nothing), the custom column was used to multiply the 
 
 
