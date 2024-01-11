@@ -76,9 +76,13 @@ I right clicked on the contract column and used split column option by delimiter
 <img width="241" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc92c154-e5b6-49de-825b-a9987aa0f78c">
 
 After splitting, I observed that the split columns contained 5% error. I used the replace error option to replace error with null.
-Furthermore, the custom column was used to derive the player's contract duration on the split columns.
+Furthermore, the custom column was used to derive the player's contract duration on the split columns by subtraction columns 1 from columns 2
 
 <img width="506" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f0a4b01-b918-495c-ba4c-a70f2cd99378">
+
+<img width="365" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f37d1e4-3421-48ca-b5b0-a9f283281cb8">
+
+
 
 # Position and Best Position
 The ‘Position’ column consists of one or more positions the player has ever played while the "Best postion"column indicates the best position for the player. 
@@ -95,6 +99,8 @@ The Replace value option was used to replace the abbreviated values
 The both columns contains inconsistent data. The height value was entered in two different formats (foot & inches), while the weight column had values entered in two different formats "kg" and "lbs".
 
 <img width="244" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/2f26ff9b-1fa1-4af5-a297-4403a9be2bf6">
+
+
 
 
 
