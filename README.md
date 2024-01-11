@@ -100,9 +100,35 @@ The both columns contains inconsistent data. The height value was entered in two
 
 <img width="244" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/2f26ff9b-1fa1-4af5-a297-4403a9be2bf6">
 
+For the Height column the consistency was achieved using a formula to convert the "foot" and "inches" to cm.
+New_height = 
+    Table.AddColumn(
+        Table.SelectRows(#"PreviousStep", each not Text.Contains([Height], "cm")),
+        "New_height", 
+        each Number.From(
+            Text.Start(
+                [Height], 
+                Text.PositionOf([Height], "'") - 1
+            )
+        ) * 30.48 + Number.From(
+            Text.Range(
+                [Height], 
+                Text.PositionOf([Height], "'") + 1, 
+                Text.PositionOf([Height], """") - Text.PositionOf([Height], "'") - 1
+            )
+        ) * 2.54
+    )
+New_weight = Table.AddColumn(#"PreviousStep", "New_weight", each
+    if Text.Contains([weight], "kg") then
+        Number.From(Text.Start([weight], Text.PositionOf([weight], "kg") - 1)) * 2 - 20
+    else
+        Number.From(Text.Start([weight], Text.PositionOf([weight], "lbs") - 1))
 
+<img width="154" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6b408cbf-dfc9-47ca-affc-0872f80b4eff">
 
-
+# Value, wage and release clause
+<img width="362" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/14b13f10-a23e-48b6-9f25-0078e1e8cee0">
+The value and wage columns are in string /text data type and needs to be converted to Number. The € was replaced with space(nothing), the custom column was used to multiply the 
 
 
 
