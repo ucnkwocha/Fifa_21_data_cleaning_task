@@ -57,9 +57,9 @@ The Club column consists of inconsistent data entry. Some of the club’s names 
 
 
 # Contract and Position Column
-The contract column indicates the players duration. It contains inconsistent values which comprises of players on contract, free and on Loan.
-<img width="375" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6534d980-c130-46d8-a726-6eb3d8ce2af5">
 
+<img width="375" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6534d980-c130-46d8-a726-6eb3d8ce2af5">
+The contract column indicates the players duration. It contains inconsistent values which comprises of players on contract, free and on Loan.
 I have used the replace value option to change the " ~ " character to "-"
 
 <img width="530" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/ee52f69b-ed1f-47d3-8e23-eaf6ccfbe76e">
@@ -76,8 +76,11 @@ I right clicked on the contract column and used split column option by delimiter
 <img width="241" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc92c154-e5b6-49de-825b-a9987aa0f78c">
 
 After splitting, I observed that the split columns contained 5% error. I used the replace error option to replace error with null.
-Furthermore, the custom column was used to derive the player's contract duration on the split columns by subtraction columns 1 from columns 2
+
 <img width="506" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f0a4b01-b918-495c-ba4c-a70f2cd99378">
+
+Furthermore, the custom column was used to derive the player's contract duration on the split columns by subtraction columns 1 from columns 2
+
 <img width="365" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f37d1e4-3421-48ca-b5b0-a9f283281cb8">
 
 # Loan date end
