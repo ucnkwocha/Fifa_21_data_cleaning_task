@@ -134,7 +134,6 @@ New_weight = Table.AddColumn(#"PreviousStep", "New_weight", each
 <img width="154" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6b408cbf-dfc9-47ca-affc-0872f80b4eff">
 
 # Value, wage and release clause
-
 <img width="362" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/14b13f10-a23e-48b6-9f25-0078e1e8cee0">
 
 The value and wage columns are in string /text data type and needs to be converted to Number. The values had suffixes 'M & k' and a prefix '€'. Where 'M' is for millions, 'K' for thousands and '€' for euro. The '€' was replaced with space(nothing) using the replace values option. On Conditional column, new columns were created such that if value is K then 1000, else 1000000. This was also done for both the wage and release clause column.
@@ -143,7 +142,6 @@ The value and wage columns are in string /text data type and needs to be convert
 
 Now the 'M' and 'K' has been replaced with nothing using the replace value option and the data type changed to whole number.
 The custom column was then used to multiply the values by 1000 and 1000000
-
 <img width="500" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/798cf539-78da-460e-9732-add59ffc299f">
 
 <img width="369" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/f943c5ae-3e2f-4c9f-8a62-bf6fc80da5ee">
@@ -154,6 +152,7 @@ The columns 'Attacking', 'Crossing', 'Finishing', 'Heading Accuracy', 'Short Pas
 The columns originally held ratings marked on a scale from 1 to 5, with the inclusion of a special character '★' beside each value. The columns were inaccurately assigned the wrong data type. The '★' character was eliminated, and the column names were fully written out, with the data type being adjusted to whole numbers.
 
 <img width="358" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/ffa087e6-0b88-4a1c-875b-d65e751fcdc6">
+<img width="385" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/3c21cc2f-04a9-4505-9194-49a12cd40976">
 
 # Hit
 The Hit column had a text data type which was changed to whole number.
