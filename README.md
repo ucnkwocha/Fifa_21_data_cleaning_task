@@ -102,6 +102,7 @@ For both columns, the values are consistent with no empty cell or error cell.
 The Replace value option was used to replace the abbreviated values
 
 <img width="504" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc958a9c-917c-4b82-9d85-63d7599efde6">
+
 <img width="133" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a0bbcf5a-98b6-47ab-a755-5ea8a4fdbad8">
 
 # Height and Weight
