@@ -59,6 +59,7 @@ The Club column consists of inconsistent data entry. Some of the club’s names 
 # Contract and Position Column
 
 <img width="375" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6534d980-c130-46d8-a726-6eb3d8ce2af5">
+
 The contract column indicates the players duration. It contains inconsistent values which comprises of players on contract, free and on Loan.
 I have used the replace value option to change the " ~ " character to "-"
 
