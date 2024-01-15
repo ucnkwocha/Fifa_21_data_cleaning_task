@@ -7,7 +7,7 @@
 
 ![image](https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/cfa76119-e9e5-4655-9156-0a81bc331c1f)
 
-This data cleaning task demostrates the process of fixing the FIFA_21 messy data set and this was done using Power BI.
+This data cleaning task demostrates the process of fixing the FIFA_21 messy data set and this was done using Power BI. 
 
 # Objective and Problem Statement
 The objective of the data cleaning is to eliminate the listed below
@@ -62,14 +62,12 @@ The contract column indicates the players duration. It contains inconsistent val
 <img width="375" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/6534d980-c130-46d8-a726-6eb3d8ce2af5">
 
 I have used the replace value option to change the " ~ " character to "-"
-
 ![image](https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/0d5be09c-f9d5-4a57-aece-6764b7977571)
 
 I also used conditional formatting to seperate each category of contract.
 Using conditional column, Values are grouped into contract, Loan and free values. Column name is renamed to contract type. A condition is entered such that, IF contract column contains (-) return CONTRACT, Else if contract contains free return free Else return Loan. Enter ok
 
 <img width="674" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/cc16d5f1-b168-464f-9511-7ae74a1b90d4">
-
 <img width="252" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b4e45cf5-ceb5-4bb2-86d1-9f9c8344f4f3">
 
 To derive the contract duration,
@@ -81,10 +79,16 @@ After splitting, I observed that the split columns contained 5% error. I used th
 Furthermore, the custom column was used to derive the player's contract duration on the split columns by subtraction columns 1 from columns 2
 
 <img width="506" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f0a4b01-b918-495c-ba4c-a70f2cd99378">
-
 <img width="365" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f37d1e4-3421-48ca-b5b0-a9f283281cb8">
 
+# Loan date end
+The column 'Loan Date End' exhibits a 97% vacancy rate, primarily due to the fact that players under loan agreements constitute merely 3% of the entire dataset.
 
+<img width="172" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/97af3a58-2d15-42b3-881a-d370078ca523">
+
+As such the empty values was replaced with Null
+
+<img width="167" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/e4d48da0-02e1-45b3-bff7-1115343000f7">
 
 # Position and Best Position
 The ‘Position’ column consists of one or more positions the player has ever played while the "Best postion"column indicates the best position for the player. 
@@ -96,7 +100,6 @@ For both columns, the values are consistent with no empty cell or error cell.
 The Replace value option was used to replace the abbreviated values
 
 <img width="504" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc958a9c-917c-4b82-9d85-63d7599efde6">
-
 <img width="133" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a0bbcf5a-98b6-47ab-a755-5ea8a4fdbad8">
 
 # Height and Weight
@@ -134,7 +137,28 @@ New_weight = Table.AddColumn(#"PreviousStep", "New_weight", each
 
 <img width="362" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/14b13f10-a23e-48b6-9f25-0078e1e8cee0">
 
-The value and wage columns are in string /text data type and needs to be converted to Number. The € was replaced with space(nothing), the custom column was used to multiply the 
+The value and wage columns are in string /text data type and needs to be converted to Number. The values had suffixes 'M & k' and a prefix '€'. Where 'M' is for millions, 'K' for thousands and '€' for euro. The '€' was replaced with space(nothing) using the replace values option. On Conditional column, new columns were created such that if value is K then 1000, else 1000000. This was also done for both the wage and release clause column.
+
+<img width="660" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b03178e4-7842-4120-9788-2dbb4895e92c">
+
+Now the 'M' and 'K' has been replaced with nothing using the replace value option and the data type changed to whole number.
+The custom column was then used to multiply the values by 1000 and 1000000
+
+<img width="500" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/798cf539-78da-460e-9732-add59ffc299f">
+
+<img width="369" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/f943c5ae-3e2f-4c9f-8a62-bf6fc80da5ee">
+
+The columns 'Attacking', 'Crossing', 'Finishing', 'Heading Accuracy', 'Short Passing', 'Volley', 'Skill', 'Dribbling', 'Curve', 'FK Accuracy', 'Long Passing', 'Ball Control', 'Movement', 'Acceleration', 'Sprint Speed', 'Agility', 'Reaction', 'Balance', 'Power', 'Short Power', 'Jumping', 'Stamina', 'Strength', 'Long Shot', 'Mentality', 'Aggression', 'Interceptions', 'Positioning', 'Vision', 'Penalties', 'Composure', 'Defending', 'Marking', 'Standing Tackle', 'Sliding Tackle', 'Goalkeeping', 'GK Diving', 'GK Handling', 'GK Kicking', 'GK Positioning', 'GK Reflexes', 'Total Stats', 'Base Stats', 'Preferred Foot', 'BOV', 'Attacking Workrate', 'Defending Workrate', 'PAC', 'SHO', 'DRI', 'DEF', 'PHY' were thoroughly reviewed, and corrections were implemented to rectify any inaccuracies in data types.
+
+# W/F, SM, IR
+The columns originally held ratings marked on a scale from 1 to 5, with the inclusion of a special character '★' beside each value. The columns were inaccurately assigned the wrong data type. The '★' character was eliminated, and the column names were fully written out, with the data type being adjusted to whole numbers.
+
+<img width="358" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/ffa087e6-0b88-4a1c-875b-d65e751fcdc6">
+
+# Hit
+The Hit column had a text data type which was changed to whole number.
+
+
 
 
 
