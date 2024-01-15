@@ -79,9 +79,7 @@ I right clicked on the contract column and used split column option by delimiter
 
 After splitting, I observed that the split columns contained 5% error. I used the replace error option to replace error with null.
 Furthermore, the custom column was used to derive the player's contract duration on the split columns by subtraction columns 1 from columns 2
-
 <img width="506" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f0a4b01-b918-495c-ba4c-a70f2cd99378">
-
 <img width="365" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/4f37d1e4-3421-48ca-b5b0-a9f283281cb8">
 
 # Loan date end
@@ -101,8 +99,8 @@ For both columns, the values are consistent with no empty cell or error cell.
 <img width="242" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a655ca9a-94d9-4c94-aad7-c8be89b12528">
 
 The Replace value option was used to replace the abbreviated values
-<img width="504" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc958a9c-917c-4b82-9d85-63d7599efde6">
 
+<img width="504" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc958a9c-917c-4b82-9d85-63d7599efde6">
 <img width="133" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a0bbcf5a-98b6-47ab-a755-5ea8a4fdbad8">
 
 # Height and Weight
