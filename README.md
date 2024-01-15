@@ -66,6 +66,7 @@ I have used the replace value option to change the " ~ " character to "-"
 
 I also used conditional formatting to seperate each category of contract.
 Using conditional column, Values are grouped into contract, Loan and free values. Column name is renamed to contract type. A condition is entered such that, IF contract column contains (-) return CONTRACT, Else if contract contains free return free Else return Loan. Enter ok
+
 <img width="674" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/cc16d5f1-b168-464f-9511-7ae74a1b90d4">
 
 <img width="252" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b4e45cf5-ceb5-4bb2-86d1-9f9c8344f4f3">
@@ -146,6 +147,7 @@ The value and wage columns are in string /text data type and needs to be convert
 
 Now the 'M' and 'K' has been replaced with nothing using the replace value option and the data type changed to whole number.
 The custom column was then used to multiply the values by 1000 and 1000000
+
 <img width="500" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/798cf539-78da-460e-9732-add59ffc299f">
 
 <img width="369" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/f943c5ae-3e2f-4c9f-8a62-bf6fc80da5ee">
