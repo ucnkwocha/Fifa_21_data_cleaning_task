@@ -100,9 +100,9 @@ For both columns, the values are consistent with no empty cell or error cell.
 
 <img width="242" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a655ca9a-94d9-4c94-aad7-c8be89b12528">
 
-The Replace value option was used to replace the abbreviated values
-
 <img width="504" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/bc958a9c-917c-4b82-9d85-63d7599efde6">
+
+The Replace value option was used to replace the abbreviated values
 
 <img width="133" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/a0bbcf5a-98b6-47ab-a755-5ea8a4fdbad8">
 
@@ -146,9 +146,10 @@ The value and wage columns are in string /text data type and needs to be convert
 <img width="660" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/b03178e4-7842-4120-9788-2dbb4895e92c">
 
 Now the 'M' and 'K' has been replaced with nothing using the replace value option and the data type changed to whole number.
-The custom column was then used to multiply the values by 1000 and 1000000
 
 <img width="500" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/798cf539-78da-460e-9732-add59ffc299f">
+
+The custom column was then used to multiply the values by 1000 and 1000000
 
 <img width="369" alt="image" src="https://github.com/ucnkwocha/Fifa_21_data_cleaning_task/assets/155919216/f943c5ae-3e2f-4c9f-8a62-bf6fc80da5ee">
 
